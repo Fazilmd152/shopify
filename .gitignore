@@ -5,6 +5,7 @@ e-commerce-ui/node_modules
 e-commerce-ui/.pnp
 e-commerce-ui.pnp.js
 
+frontend
 # testing
 e-commerce-ui/coverage
 

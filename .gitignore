@@ -1,4 +1,4 @@
-node_modules
 frontend
 e-commerce-ui
-env
+node_modules
+.env

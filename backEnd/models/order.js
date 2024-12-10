@@ -50,43 +50,53 @@ const orderSchema = mongoose.Schema({
             product: {
                 type: mongoose.Schema.ObjectId,
                 required: true,
-                ref:'products'
+                ref: 'products'
             },
         }
     ],
-    itemsPrice:{
-        type:Number,
-        required:true,
-        default:0.00
+    itemsPrice: {
+        type: Number,
+        required: true,
+        default: 0.00
     },
-    taxPrice:{
-        type:Number,
-        required:true,
-        default:0.0
+    taxPrice: {
+        type: Number,
+        required: true,
+        default: 0.0
     },
-    shippingPrice:{
-        type:Number,
-        required:true,
-        default:0.0
+    shippingPrice: {
+        type: Number,
+        required: true,
+        default: 0.0
     },
-    totalPrice :{
-        type:Number,
-        required:true,
-        default:0.0
+    totalPrice: {
+        type: Number,
+        required: true,
+        default: 0.0
     },
-    paidAt:{
-        type:Date
+    paymentInfo: {
+        id: {
+            type: String,
+            required: true
+        },
+        status: {
+            type: String,
+            required: true
+        }
     },
-    deliveredAt:{
-        type:Date
+    paidAt: {
+        type: Date
     },
-    orderStatus:{
-        type:String,
-        required:true,
-        default:'Processing'
+    deliveredAt: {
+        type: Date
     },
-    createdAt:{
-        type:Date,
+    orderStatus: {
+        type: String,
+        required: true,
+        default: 'Processing'
+    },
+    createdAt: {
+        type: Date,
         default: Date.now
     }
 

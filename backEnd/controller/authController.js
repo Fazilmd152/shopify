@@ -154,7 +154,9 @@ exports.changePassword = catchAsyncError(async (req, res, next) => {
    
     
     const user = await User.findById(req.user.id).select('+password')
+    //console.log(req.body);
     
+    //console.log(user);
     
     //check old password
     const oldPassword = req.body.oldPassword

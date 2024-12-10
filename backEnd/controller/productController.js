@@ -11,10 +11,9 @@ const APIFeatures = require('../utils/APIFeatures')
 //get product -api--http://localhost:7000/api/v1/products
 exports.getProducts = async (req, res, next) => {
 
-    let resPerPage =req.query.keyword?12:10;
-   
-    
-    
+    //let resPerPage =req.query.keyword?12:10;
+    let resPerPage =8;
+      
     let buildQuery = () => {
         return new APIFeatures(model.find(), req.query).Search().filter()
     }

@@ -1,11 +1,9 @@
 const app = require("./app")
-const dotenv = require("dotenv")
 const path =require("path")
 const connectDataBase = require("./configuration/database")
 const os = require("os")
 const { log } = require("console")
 
-dotenv.config()
 
 connectDataBase()
 
